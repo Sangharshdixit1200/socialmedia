@@ -46,7 +46,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['username']))
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="download (2).png" type="image/icon type">
-    <title>Uername Checker</title>
+    <title>Uername </title>
     <style>
         .cl {
             width: 70%;
