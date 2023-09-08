@@ -75,12 +75,12 @@ if(isset($_POST["name"]))
   <header>
     <h2  class="logo" ></h2>
     <nav class="navigation">
-      <a href="Home.php">Home</a>
+      <a href="index.php">Home</a>
       <a href="login.php">Login</a>
       <a href="reg.php">Register </a>
       <a href="contact.php">contact</a>
   
-      <button class="btnlogin-popup">login</button>
+      
   
     </nav>
 </header>

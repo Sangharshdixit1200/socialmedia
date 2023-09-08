@@ -45,37 +45,58 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['username']))
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="icon" href="download (2).png" type="image/icon type">
+    <title>Uername Checker</title>
     <style>
         .cl {
-            width: 80%;
+            width: 70%;
             height: 60px;
             margin: 10px;
         }
         </style>
 </head>
 <body>
-    <header>
+
+    <header id="hd">
         <h2  class="logo" ></h2>
         <nav class="navigation">
           <a href="Home.php">Home</a>
           <a href="login.php">Login</a>
           <a href="reg.php">Register </a>
           <a href="contact.php">contact</a>
+          <!-- <input type="checkbox" class="checkbox"> -->
+          <script>
+    // Function to toggle dark mode on the body element
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      document.getElementById('hd').classList.toggle('dark-hd');
+    }
+  </script>
+      <button onclick="toggleDarkMode()" class="toggle">Toggle Dark Mode</button>
+
           
-      
-          <button class="btnlogin-popup">login</button>
-      
         </nav>
       </header>
+      <div id="particles-js" style="
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+">
+
+</div>
+<div style="margin-top: 250px">
       <center>
     <form action="" method="post">
-    <input type="checkbox" class="checkbox">
+    
+    
     <h1>Social Media Username Checker</h1>
     <br>
-        <div class="input-box" style="display:flex; width:80%">
+        <div class="input-box" style="display:flex; width:50%">
       <span class="icon"><ion-icon name="mail"></ion-icon></span>
-      <input style="width:80%" type="text" name="username" required> <button style="width:20%" type="submit" class="btn">Check</button>
+      <input style="width:70%" type="text" name="username" required> 
+      <button style="width:40%" type="submit" class="btn">Check</button>
       <label>Username</label>
 
     </div>
@@ -127,8 +148,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['username']))
 <?php
 }
 ?>
-      </center>
+    </center>
+</div>
 
-    
+    <script src="particles.min.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

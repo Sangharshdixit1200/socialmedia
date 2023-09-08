@@ -55,15 +55,15 @@ if(isset($_POST["username"]))
     <a href="login.php">Login</a>
     <a href="reg.php">Register </a>
     <a href="contact.php">contact</a>
-    <button class="btnlogin-popup">login</button>
+    
 
   </nav>
 </header>
  
 <div class="wrapper">
-  <span class="icon-close">
+  <!-- <span class="icon-close">
     <ion-icon name="close-circle-outline"></ion-icon>
-  </span>
+  </span> -->
   <div class="form-box login">
   <h2>Registration</h2>
   <form method="post">
@@ -77,7 +77,7 @@ if(isset($_POST["username"]))
 
       <div class="input-box">
         <span class="icon"><ion-icon name="mail"></ion-icon></span>
-        <input type="email" name="email" required>
+        <input type="text" name="email" required>
         <label>Email</label>
       </div>
       <div class="input-box">
@@ -99,15 +99,11 @@ if(isset($_POST["username"]))
     </form>
 
  
-  <!-- <div class="wrapper">
-    <span class="icon-close">
-      <ion-icon name="close-circle-outline"></ion-icon>
-    </span>
-   
-</div> -->
-<script src="script.js"></script>
+ 
+</div> 
+<!-- <script src="script.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> -->
 
   
 </body>

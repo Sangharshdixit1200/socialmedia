@@ -3,16 +3,48 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
+  
+}
+
+.dark-mode {
+  color: #f0f0f0 !important;
+  background: #000 !important;
+  .input-box input{
+    color: #fff !important;
+  }
+  .input-box label{
+    color: #fff !important;
+  }
+  .input-box{
+    border-bottom: 2px solid #fff !important;
+  }
+  .btn{
+    color: #252525;
+    background: #fff;
+  }
+}
+
+.dark-hd {
+  background-color: #333 !important;
+  color: #f0f0f0 !important;
 }
 
 body{
-  display:flex ;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  /* background: url('background.jpg');
+  background-size: cover;
+  background-position:center ; */
+   /* display:flex ; */
+  /* justify-content: center;
+  align-items: center; */
+ /* min-height: 100vh;
   background: url('background.jpg');
   background-size: cover;
   background-position:center ;
+
+
+  background-color: #f0f0f0 ;
+  color: #333; */
+  
 }
 header {
   position: fixed;
@@ -137,12 +169,14 @@ header {
   top: 50%;
   left: 5px;
   transform: translateY(-50%);
-  font-size: lem;
-  color:#162938;
+  font-size: 1em;
+  color: #162938;
   font-weight: 500;
   pointer-events: none;
-  transition: .5s;
+  transition: 0.2s; /* Corrected the transition time */
+  padding: 0 35px 0 5px;
 }
+
 .input-box input:focus~label,
 .input-box input:valid~label{
   top: -5px;
@@ -165,6 +199,8 @@ header {
   color: #162938;
   line-height: 57px;
 }
+
+
 .remember-forget {
   font-size: .9em;
   color: #162938;
@@ -222,6 +258,22 @@ header {
   margin: 30px 0;
 }
 
+.toggle{
+  margin-left: 100%;
+  flex: left;
+  position: absolute;
+  left: 80px;
+  top:2px;
+}
+
+
+
+/* 
+body {
+
+} */
+
+/* Dark mode styles */
 
 
 

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="sweetalert2.all.min.js"></script>
+
+  <style>
+    /* Default light mode styles */
+   
+  </style>
+</head>
+<body>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+  <script>
+    function popup(val) {
+      if (val == "success") {
+        Swal.fire({
+          position: 'center',
+          icon: 'success',
+          title: 'Registration successful!',
+          showConfirmButton: false,
+          timer: 1500
+        });
+      } else {
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Something went wrong!'
+        })
+      }
+    }
+  </script>
+
+  <!-- PHP and header sections remain unchanged -->
+
+  <div class="wrapper">
+    <!-- Form and other content remain unchanged -->
+  </div>
+
+  <script>
+    // Function to toggle dark mode on the body element
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
